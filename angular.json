@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tft-app"
+    }
+  },
+  "defaultProject": "tft-app",
+  "cli": {
+    "analytics": false
+  }
 }

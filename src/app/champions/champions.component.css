@@ -1,0 +1,35 @@
+.list{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background: linear-gradient(45deg, #6381c4, #23304b );
+    list-style: none;
+    width: 80vw;
+    flex-wrap: wrap;
+    color: white;
+}
+.list-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60px;
+}
+h1{
+    font-size: 0.7rem;
+    padding: 5px;
+}
+img{
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+
+}
+img:hover{
+    border-color: red;
+}
+
+.borderColor1{ border:1px solid white}
+.borderColor2{ border:1px solid green}
+.borderColor3{ border:1px solid royalblue}
+.borderColor4{ border:1px solid hotpink}
+.borderColor5{ border:1px solid yellow}
