@@ -1,6 +1,12 @@
-<ul class='list'>
-    <li class='list-element' *ngFor="let champ of championArray">
-        <img src='../../assets/champions/{{ champ.championId }}.png' ngClass="borderColor{{ champ.cost }}">
-        <h1>{{ champ.name }}</h1>
-    </li>
-</ul>
+<div class="champWrapper">
+    <ul class='list' [ngClass]="{'list-search': displayChampCost}">
+        <li class='list-element' *ngFor="let champ of championArray">
+            <img src='../../assets/champions/{{ champ.championId }}.png' ngClass="borderColor{{ champ.cost }}">
+            <h1>{{ champ.name }}</h1>
+            <span class="tooltip"></span>
+        </li>
+    </ul>
+    <select [(ngModel)]="witam" (ngModelChange)="onChange()">
+        <option *ngFor="let item of gold" [ngValue]="item">Ilość złota potrzebna do kupienia {{item}}</option>
+    </select>
+</div>

@@ -1,22 +1,45 @@
+.champWrapper{
+    position: relative;
+    background: linear-gradient(45deg, #82a5f0, #23304b );
+    height:80vh;
+}
 .list{
+    position: absolute;
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    background: linear-gradient(45deg, #6381c4, #23304b );
+    grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
     list-style: none;
-    width: 80vw;
+    color: rgb(43, 41, 41);
+    border: 3px solid blue;
+    height: 80vh;
+    padding: 10px;
+}
+.list-search{
+
+    width: 50vw;
+    display: flex;
     flex-wrap: wrap;
-    color: white;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin:0;
+}
+select{
+    position: absolute;
+    right: 0px;
 }
 .list-element{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 9vw;
+    height: 50px;
     flex-direction: column;
-    height: 60px;
+    padding: 3px;
+    transition: all 1s ;
 }
 h1{
+    text-align: center;
     font-size: 0.7rem;
-    padding: 5px;
+    word-wrap: break-word;
 }
 img{
     width: 30px;
@@ -28,8 +51,8 @@ img:hover{
     border-color: red;
 }
 
-.borderColor1{ border:1px solid white}
-.borderColor2{ border:1px solid green}
-.borderColor3{ border:1px solid royalblue}
-.borderColor4{ border:1px solid hotpink}
-.borderColor5{ border:1px solid yellow}
+.borderColor1{ border:2px solid white}
+.borderColor2{ border:2px solid green}
+.borderColor3{ border:2px solid royalblue}
+.borderColor4{ border:2px solid hotpink}
+.borderColor5{ border:2px solid yellow}

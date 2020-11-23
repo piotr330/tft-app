@@ -381,7 +381,7 @@ export class ChampionsService {
     {
       "name": "Sylas",
       "championId": "TFT4_Sylas",
-      "cost": 1,
+      "cost": 2,
       "traits": [
         "Moonlight",
         "Set4_Brawler"
