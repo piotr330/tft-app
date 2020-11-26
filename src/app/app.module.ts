@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ItemsComponent } from './items/items.component';
 import { ChampionsComponent } from './champions/champions.component';
 import { TraitsComponent } from './traits/traits.component';
+import { MenuNavComponent } from './menu-nav/menu-nav.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { TraitsComponent } from './traits/traits.component';
     AppComponent,
     ItemsComponent,
     ChampionsComponent,
-    TraitsComponent
+    TraitsComponent,
+    MenuNavComponent
   ],
   imports: [
     BrowserModule,
