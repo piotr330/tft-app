@@ -1,0 +1,11 @@
+.homePageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+}
+h1{
+    color: white;
+    padding: 40px;
+}

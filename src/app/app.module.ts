@@ -8,6 +8,7 @@ import { ItemsComponent } from './items/items.component';
 import { ChampionsComponent } from './champions/champions.component';
 import { TraitsComponent } from './traits/traits.component';
 import { MenuNavComponent } from './menu-nav/menu-nav.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { MenuNavComponent } from './menu-nav/menu-nav.component';
     ItemsComponent,
     ChampionsComponent,
     TraitsComponent,
-    MenuNavComponent
+    MenuNavComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,

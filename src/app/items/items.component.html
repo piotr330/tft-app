@@ -1,1 +1,6 @@
-<p>items works!</p>
+<ul class="itemsWrapper">
+    <li class="item" *ngFor="let i of itemArray">
+        <img src="../../assets/items/{{ i.id}}.png" alt="">
+        <p>{{i.name}}</p>
+    </li>
+</ul>

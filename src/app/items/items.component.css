@@ -1,0 +1,21 @@
+.itemsWrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    padding: 10px 10px;
+}
+p{
+    text-align: center;
+    font-size: 15px;
+    word-wrap: break-word;
+    color: white;
+}
+img{
+    width: 50px;
+    border: 3px solid #3a4f7c;;
+}

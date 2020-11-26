@@ -1,7 +1,13 @@
 <nav>
-    <div class="links">
-        <a href="#">Home</a>
-        <a href="#">Champions</a>
-        <a href="#">Items</a>
+    <div class='hamburgerMenu' (click)='displayMenuHandler()'>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="links" [ngClass]="{'displayMenu': !displayMenu}">
+        <a [routerLink]="['/']" routerLinkActive="router-link-active">Home</a>
+        <a [routerLink]="['/champions']" routerLinkActive="router-link-active">Champions</a>
+        <a [routerLink]="['/items']" routerLinkActive="router-link-active">Items</a>
+        <a [routerLink]="['/Traits']" routerLinkActive="router-link-active">Traits</a>
     </div>
 </nav>

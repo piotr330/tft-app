@@ -1,9 +1,50 @@
-nav{
+/* Hamburger Menu */
+.hamburgerMenu{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 30px;
+    top:30px;
+    background: red;
+    z-index: 9999;
     display: flex;
-    background: cornflowerblue;
-    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-a{
+span{
+    display: block;
+    height: 4px;
+    width: 30px;
+    background: black;
+}
+span:nth-child(2){
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+nav{
+    background: cornflowerblue;
+    position: relative;
+}
+.links{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 1s left ease-in-out;
+    z-index: 9998;
+}
+.displayMenu{
+    left: -30%;
+}
+a{  
+    text-align: center;
+    width: 40vw;
     padding: 20px;
     background: cornflowerblue;
     color: black;
@@ -13,5 +54,5 @@ a{
 a:hover{
     background: transparent;
     color: white;
-    background: #23304b;
+    background: #5674b4;
 }

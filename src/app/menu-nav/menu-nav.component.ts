@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu-nav.component.css']
 })
 export class MenuNavComponent implements OnInit {
-
+  displayMenu: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+  displayMenuHandler() {
+    console.log(this.displayMenu);
+
+    this.displayMenu = !this.displayMenu;
   }
 
 }
